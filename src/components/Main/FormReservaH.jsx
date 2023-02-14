@@ -8,6 +8,7 @@ import { useForm } from "./useForm";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 
+
 const FormReservaH = ({ btnReserva }) => {
   const {t}= useTranslation()
 

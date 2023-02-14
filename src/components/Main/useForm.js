@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export const useForm = (initialForm, validateForm) => {
   const [form, setForm] = useState(initialForm)
@@ -35,7 +36,10 @@ export const useForm = (initialForm, validateForm) => {
         setForm(initialForm)
 
         setTimeout(()=> setResponse(null), 10000)
-        //POSTEAR LOS DATOS AL MAIL
+        
+        emailjs.sendForm('service_fw5od51', 'template_rtuxagl', e.target, 'ohu_OQX0UtaMai0lw')
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
     }else{
         return
     }
