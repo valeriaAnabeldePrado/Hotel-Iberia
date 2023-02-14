@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
+.hero-container {
+  font-family: "Poppins", sans-serif;
+  background: black url("../images/banner2.jpg") no-repeat bottom right ;
+  background-attachment: fixed;
+  filter: sepia(10%);
+  width: 100%;
+  height: 55vh;
+  color: #fef7e5;
+  background-size: cover;
+}
+.hero-container_items {
+  padding-top: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container_H2 {
+  text-align: center;
+  font-family: "Zaloga", sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 10px;
+}
+.hero-container_parrafo {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1em;
+}
+.border {
+  background-color: #fef7e5;
+  width: 100%;
+  height: 3px;
+  opacity: 2;
+}
+.boton-b {
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  color: #fef7e5;
+  border: 2px solid #fef7e5;
+  background-color: rgb(201, 201, 201, 0.1);
+  transition: 0.5s ease-in all;
+}
+.boton-b:hover {
+  color: rgb(80, 80, 80);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.link-b{
+  text-decoration: none;
+  color: #fef7e5;
+  padding: 1em;
+  font-size: 1.2em;
+}
+.link-b:hover{
+ color: #a0735c;
+ font-weight: 600;
+}
+/*RESPONSIVE TABLET*/
+@media only screen and (min-width: 800px) {
+.hero-container{
+  height: 100vh;
+}
+.hero-container_items{
+  height: 110%;
+}
+.hero-container_H2{
+  font-size: 7em;
+}
+.boton-b{
+  border: 3px solid;
+  margin: .5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.1em;
+}
+.hero-container_parrafo{
+  margin: 1rem;
+  font-size: 1.5em;
+}
+.link-b{
+  font-size: 1.3em;
+  letter-spacing: 3px;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .hero-container_H2{
+    font-size: 9em;
+  }
+}

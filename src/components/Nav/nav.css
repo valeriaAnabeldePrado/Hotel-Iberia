@@ -1,0 +1,52 @@
+.navBrand {
+  color:#fffdf7;
+}
+.flagContainer{
+  display: flex;
+}
+.boton-lang{
+  border: 2px solid #fef7e5;
+  padding: .8rem 1rem .8rem 1rem;
+  background-color: transparent;
+  color: #fef7e5;
+  margin: 0 1rem;
+  font-size: 16px;
+  transition: 1s ease;
+}
+.boton-lang:hover{
+  color: #8b6450;
+  background-color: #fef7e5;
+}
+.navbar-toggler-icon{
+  background-image: url(../images/navBar.png);
+  background-size: 70%;
+}
+.navMenu {
+  background-color: #fef7e5;
+  padding-left: 1.5rem;
+}
+.navHeader {
+  color: #a0735c;
+}
+.textLink {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  color: #a0735c;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+.textLink:hover {
+  color: #8b6450;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.btn-clse:focus{
+ box-shadow: none;
+ outline: none;
+ border-style: none;
+}
+.navbar{
+  width: 100% !important;
+}
