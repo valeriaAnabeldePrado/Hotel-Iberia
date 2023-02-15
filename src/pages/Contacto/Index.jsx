@@ -21,9 +21,9 @@ const Contacto = () => {
   
   const initialForm ={
     name: "",
-    lastname: "",
+    lastName: "",
     email:"",
-    phone: "",
+    phoneNumber: "",
     comments: ""
   }
   
@@ -37,13 +37,13 @@ const Contacto = () => {
     if(!form.name.trim()){
       errors.name = `${t('errorForm.nameError')}`
     }
-    if (!form.lastname.trim()){
-      errors.lastname = `${t('errorForm.lastnameError')}`
+    if (!form.lastName.trim()){
+      errors.lastName = `${t('errorForm.lastnameError')}`
     }
-    if (!form.phone.trim()){
-      errors.phone = `${t('errorForm.numberError')}`
-    } else if (!regexNumber.test(form.phone.trim()))
-    errors.phone = `${t('errorForm.numberErrorII')}`
+    if (!form.phoneNumber.trim()){
+      errors.phoneNumber = `${t('errorForm.numberError')}`
+    } else if (!regexNumber.test(form.phoneNumber.trim()))
+    errors.phoneNumber = `${t('errorForm.numberErrorII')}`
     if(!form.email.trim()){
       errors.email =`${t('errorForm.emailError')}` 
     }else if(!regexEmail.test(form.email.trim())){
@@ -109,13 +109,13 @@ const Contacto = () => {
                   <Form.Label>{t('formHabitaciones.lastName')}</Form.Label>
                   <Form.Control 
                     type="text"
-                    name="lastname"
+                    name="lastName"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    value={form.lastname}
+                    value={form.lastName}
                     required
                     />
-                    {erros.lastname &&<p className="error">{erros.lastname}</p>}
+                    {erros.lastName &&<p className="error">{erros.lastName}</p>}
                 </Form.Group>
               </Row>
               <Row className="mb-3">
@@ -124,13 +124,13 @@ const Contacto = () => {
                   <Form.Control 
                    type="tel" 
                    placeholder="Código de área-número sin 15"
-                   name="phone"
+                   name="phoneNumber"
                    onBlur={handleBlur}
                    onChange={handleChange}
-                   value={form.phone}
+                   value={form.phoneNumber}
                    required
                   />
-                  {erros.phone &&<p className="error">{erros.phone}</p>}
+                  {erros.phoneNumber &&<p className="error">{erros.phoneNumber}</p>}
                 </Form.Group>
               </Row>
               <Form.Group className="mb-3" controlId="formGridAddress1">
